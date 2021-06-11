@@ -1,6 +1,22 @@
 <template>
   <div class="navBar">
-      <h1>NavBar</h1>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <router-link to="/formulario">
+            <a class="nav-link" href="#">Formulario <span class="sr-only">(current)</span></a>
+          </router-link>
+          <router-link to="/multiple_choice">
+            <a class="nav-link" href="#">MultipleChoice <span class="sr-only">(current)</span></a>
+          </router-link>
+        </ul>
+      </div>
+    </nav>
+
   </div>
 </template>
 

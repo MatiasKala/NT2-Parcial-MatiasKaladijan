@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <NavBar/>
+    <div class="jumbotron">
+      <NavBar/>
+      <hr>
+      <br>
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -24,5 +28,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.jumbotron{
+  background-color: #2c3e50;
 }
 </style>
